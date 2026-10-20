@@ -1,0 +1,38 @@
+- class_name: 技能
+  creativity_list:
+    - name: Python
+      color: "#3776ab"
+      icon: /img/skills/python.svg
+    - name: JavaScript
+      color: "#323330"
+      icon: /img/skills/javascript.svg
+    - name: TypeScript
+      color: "#3178c6"
+      icon: /img/skills/typescript.svg
+    - name: React
+      color: "#20232a"
+      icon: /img/skills/react.svg
+    - name: Vue
+      color: "#41b883"
+      icon: /img/skills/vuejs.svg
+    - name: Node.js
+      color: "#339933"
+      icon: /img/skills/nodejs.svg
+    - name: Docker
+      color: "#2496ed"
+      icon: /img/skills/docker.svg
+    - name: Git
+      color: "#f05032"
+      icon: /img/skills/git.svg
+    - name: Linux
+      color: "#333333"
+      icon: /img/skills/linux.svg
+    - name: VS Code
+      color: "#007acc"
+      icon: /img/skills/vscode.svg
+    - name: Figma
+      color: "#f24e1e"
+      icon: /img/skills/figma.svg
+    - name: Markdown
+      color: "#083fa1"
+      icon: /img/skills/markdown.svg

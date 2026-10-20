@@ -11,6 +11,7 @@ menu:
 
   我的:
     相册集: /album/ || anzhiyu-icon-images
+    留言板: /comments/ || anzhiyu-icon-envelope
 
   关于:
     关于本人: /about/ || anzhiyu-icon-paper-plane
@@ -308,7 +309,8 @@ addtoany:
 
 comments:
   # Up to two comments system, the first will be shown as default
-  # Choose: Valine/Waline/Twikoo/Artalk
+  # Choose: Valine/Waline/Twikoo/Artalk/Giscus
+  # 当前留空，页面不会渲染评论区；部署好后端后填 use: ['Twikoo'] 并把下方 twikoo.envId 填上即可
   use: # Twikoo/Waline
   text: true # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.

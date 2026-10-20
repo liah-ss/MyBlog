@@ -19,9 +19,10 @@ npx hexo generate          # 生成静态文件到 public/
 ```
 ├─ source/                # 内容
 │  ├─ _posts/             # 文章（每篇可带同名资源目录放图片）
-│  ├─ _data/              # 页面数据（about.yml 等）
-│  ├─ about/ tags/ categories/ archives/  # 页面
-│  └─ img/                # 站点静态图片（头像等）
+│  ├─ _data/              # 页面数据（about.yml / album.yml）
+│  ├─ about/ tags/ categories/ comments/ album/  # 页面
+│  ├─ dailyPhoto/ scenery/ # 相册详情页（与 album.yml 的 path_name 对应）
+│  └─ img/                # 站点静态图片（头像、占位图、相册 album/）
 ├─ themes/anzhiyu/        # 主题源码：改模板/样式在这里
 ├─ scripts/               # 自研 Hexo 脚本，构建时自动加载（按需新建）
 ├─ scaffolds/             # 新建文章/页面的模板
@@ -39,6 +40,29 @@ npx hexo generate          # 生成静态文件到 public/
 - 占位图 `source/img/avatar.png`、`source/img/placeholder.png` 是脚本生成的，替换同名文件即可全站生效。
 - 首屏加载动画开关在 `_config.anzhiyu.yml` 的 `preloader.enable`，当前关闭；想还原参考站效果打开即可。
 
+## 评论系统
+
+当前 `comments.use` 为空，页面只渲染留言板正文、不渲染评论区。接入只需两步：
+
+1. 部署后端（任选其一）：
+   - **Twikoo**：Vercel 新建项目 → 导入 [twikoojs/twikoo](https://github.com/twikoojs/twikoo) → 绑定 MongoDB（Atlas 免费版即可）→ 得到 `https://xxx.vercel.app`。
+   - **giscus**：仓库开启 Discussions → 安装 [giscus app](https://github.com/apps/giscus) → 在 [giscus.app](https://giscus.app) 填写仓库，拿到 `repo` / `repo_id` / `category_id`。
+2. 回到 `_config.anzhiyu.yml`：
+   - Twikoo：`comments.use: ["Twikoo"]`，`twikoo.envId: https://xxx.vercel.app`
+   - giscus：`comments.use: ["Giscus"]`，填 `giscus.repo` / `repo_id` / `category_id`
+
+留言板页面在 `source/comments/index.md`，任何页面加 `comments: true` 就会显示评论区。
+
+## 相册
+
+相册由 `source/_data/album.yml` 驱动，一个相册一条数据：
+
+- `type: 2`：justified 画廊（按行高铺满，适合多图），对应 `/dailyPhoto/`。
+- `type: 1`：卡片瀑布流（每张图带描述、地点、日期），对应 `/scenery/`。
+- 关键字段：`class_name`（相册名）、`path_name`（详情页路径）、`cover`（列表封面）、`album_list[].image`（图片路径数组）。
+
+新增相册时：在 `album.yml` 加一条 → 用 `path_name` 新建同名页面，front-matter 写 `type: album_detail`。图片放 `source/img/album/`（当前 12 张是占位图，直接替换同名文件即可）。
+
 ## 二次开发入口
 
 | 想改什么 | 改哪里 |
@@ -47,6 +71,7 @@ npx hexo generate          # 生成静态文件到 public/
 | 首页/文章页/关于页结构 | `themes/anzhiyu/layout/*.pug` |
 | 样式 | `themes/anzhiyu/source/css/`（覆盖变量优先，少直接改源码） |
 | 由数据驱动的页面（关于、友链、相册） | `source/_data/*.yml` |
+| 评论后端与开关 | `_config.anzhiyu.yml` 的 `comments` / `twikoo` / `giscus` |
 | 构建期逻辑（生成新页面、处理文章字段） | `scripts/*.js` |
 
 主题是 GPL-3.0，可以自由修改，但保留 `themes/anzhiyu/LICENSE`。
