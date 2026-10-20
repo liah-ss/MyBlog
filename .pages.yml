@@ -1,0 +1,443 @@
+# Pages CMS 配置：https://pagescms.org/docs/configuration/
+# 登录 app.pagescms.org → 用 GitHub 授权 → 选择仓库即可编辑。
+# 只有对该仓库有写权限的 GitHub 账号能进入，别人只能看静态页面。
+
+media:
+  - name: images
+    label: 站点图片
+    input: source/img
+    output: /img
+    extensions: [png, jpg, jpeg, webp, gif, svg]
+    categories: [image]
+
+content:
+  # ---------- 我的设备 ----------
+  - name: equipment
+    label: 我的设备
+    type: file
+    path: source/_data/equipment.yml
+    format: yaml
+    list: true
+    fields:
+      - name: class_name
+        label: 页面标题
+        type: string
+      - name: description
+        label: 副标题
+        type: string
+      - name: tip
+        label: 一句话说明
+        type: text
+      - name: top_background
+        label: 顶部背景图
+        type: image
+        options:
+          media: images
+      - name: good_things
+        label: 设备分组
+        type: object
+        list:
+          collapsible: true
+          summary: "{title}"
+        fields:
+          - name: title
+            label: 分组名
+            type: string
+          - name: description
+            label: 分组说明
+            type: string
+          - name: equipment_list
+            label: 设备
+            type: object
+            list:
+              collapsible: true
+              summary: "{name}"
+            fields:
+              - name: name
+                label: 设备名
+                type: string
+              - name: specification
+                label: 型号 / 配置
+                type: string
+              - name: description
+                label: 描述
+                type: text
+              - name: image
+                label: 图片
+                type: image
+                options:
+                  media: images
+              - name: link
+                label: 链接
+                type: string
+                description: 填 https:// 开头的商品页链接，按钮会变成「详情」
+
+  # ---------- 相册 ----------
+  - name: album
+    label: 相册
+    type: file
+    path: source/_data/album.yml
+    format: yaml
+    list: true
+    fields:
+      - name: class_name
+        label: 相册名
+        type: string
+      - name: path_name
+        label: 详情页路径
+        type: string
+        description: 例如 /dailyPhoto，必须与 source 下同名页面一致
+      - name: type
+        label: 布局类型
+        type: number
+        description: 1 = 卡片瀑布流，2 = 通栏画廊
+      - name: description
+        label: 相册描述
+        type: text
+      - name: cover
+        label: 列表封面
+        type: image
+        options:
+          media: images
+      - name: top_background
+        label: 详情页顶部背景
+        type: image
+        options:
+          media: images
+      - name: top_link
+        label: 顶部按钮链接
+        type: string
+      - name: top_btn_text
+        label: 顶部按钮文字
+        type: string
+      - name: rowHeight
+        label: 行高（type 2 生效）
+        type: number
+      - name: limit
+        label: 每次加载数量（type 2 生效）
+        type: number
+      - name: lazyload
+        label: 懒加载
+        type: boolean
+      - name: btnLazyload
+        label: 按钮触发懒加载
+        type: boolean
+      - name: album_list
+        label: 照片
+        type: object
+        list:
+          collapsible: true
+          summary: "{content}"
+        fields:
+          - name: date
+            label: 日期
+            type: date
+          - name: content
+            label: 描述
+            type: text
+          - name: address
+            label: 地点
+            type: string
+          - name: from
+            label: 作者
+            type: string
+          - name: image
+            label: 图片
+            type: image
+            options:
+              media: images
+              multiple: true
+
+  # ---------- 关于页 ----------
+  - name: about
+    label: 关于页
+    type: file
+    path: source/_data/about.yml
+    format: yaml
+    list: true
+    fields:
+      - name: class_name
+        label: 页面类名
+        type: string
+      - name: subtitle
+        label: 副标题
+        type: string
+      - name: avatarImg
+        label: 头像
+        type: image
+        options:
+          media: images
+      - name: name
+        label: 名字
+        type: string
+      - name: description
+        label: 一句话介绍
+        type: text
+      - name: helloAbout
+        label: Hello 文字
+        type: string
+      - name: aboutsiteTips
+        label: 追求
+        type: object
+        fields:
+          - name: tips
+            label: 提示
+            type: string
+          - name: title1
+            label: 标题一
+            type: string
+          - name: title2
+            label: 标题二
+            type: string
+          - name: word
+            label: 滚动词
+            type: string
+            list: true
+      - name: skillsTips
+        label: 技能
+        type: object
+        fields:
+          - name: tips
+            label: 提示
+            type: string
+          - name: title
+            label: 标题
+            type: string
+      - name: careers
+        label: 生涯
+        type: object
+        fields:
+          - name: tips
+            label: 提示
+            type: string
+          - name: title
+            label: 标题
+            type: string
+          - name: list
+            label: 条目
+            type: object
+            list: true
+            fields:
+              - name: desc
+                label: 内容
+                type: string
+      - name: statistic
+        label: 文章归档卡
+        type: object
+        fields:
+          - name: link
+            label: 链接
+            type: string
+          - name: text
+            label: 按钮文字
+            type: string
+          - name: cover
+            label: 背景图
+            type: image
+            options:
+              media: images
+      - name: map
+        label: 所在地
+        type: object
+        fields:
+          - name: title
+            label: 提示
+            type: string
+          - name: StrengthenTitle
+            label: 地点
+            type: string
+          - name: background
+            label: 亮色背景
+            type: image
+            options:
+              media: images
+          - name: backgroundDark
+            label: 暗色背景
+            type: image
+            options:
+              media: images
+      - name: selfInfo
+        label: 个人信息
+        type: object
+        fields:
+          - name: selfInfoTips1
+            label: 提示一
+            type: string
+          - name: selfInfoContentYear
+            label: 年份
+            type: number
+          - name: selfInfoTips2
+            label: 提示二
+            type: string
+          - name: selfInfoContent2
+            label: 内容二
+            type: string
+          - name: selfInfoTips3
+            label: 提示三
+            type: string
+          - name: selfInfoContent3
+            label: 内容三
+            type: string
+      - name: personalities
+        label: 性格
+        type: object
+        fields:
+          - name: author_name
+            label: 名字
+            type: string
+          - name: personality_type
+            label: 人格类型
+            type: string
+          - name: photo_url
+            label: 照片
+            type: image
+            options:
+              media: images
+          - name: personality_img
+            label: 人格图
+            type: image
+            options:
+              media: images
+          - name: name_url
+            label: 链接
+            type: string
+      - name: maxim
+        label: 座右铭
+        type: object
+        fields:
+          - name: maxim_tips
+            label: 提示
+            type: string
+          - name: maxim_top
+            label: 上半句
+            type: string
+          - name: maxim_bottom
+            label: 下半句
+            type: string
+      - name: buff
+        label: 特长
+        type: object
+        fields:
+          - name: buff_tips
+            label: 提示
+            type: string
+          - name: buff_top
+            label: 第一行
+            type: string
+          - name: buff_bottom
+            label: 第二行
+            type: string
+      - name: game
+        label: 游戏
+        type: object
+        fields:
+          - name: game_tips
+            label: 提示
+            type: string
+          - name: game_title
+            label: 游戏名
+            type: string
+          - name: game_uid
+            label: ID
+            type: string
+          - name: game_bg
+            label: 背景图
+            type: image
+            options:
+              media: images
+      - name: comic
+        label: 追番
+        type: object
+        fields:
+          - name: comic_tips
+            label: 提示
+            type: string
+          - name: comic_title
+            label: 标题
+            type: string
+          - name: comic_list
+            label: 番剧
+            type: object
+            list: true
+            fields:
+              - name: name
+                label: 名称
+                type: string
+              - name: href
+                label: 链接
+                type: string
+              - name: cover
+                label: 封面
+                type: image
+                options:
+                  media: images
+      - name: like
+        label: 关注偏好
+        type: object
+        fields:
+          - name: like_tips
+            label: 提示
+            type: string
+          - name: like_title
+            label: 标题
+            type: string
+          - name: like_bg
+            label: 背景图
+            type: image
+            options:
+              media: images
+          - name: like_bottom
+            label: 说明
+            type: string
+      - name: music
+        label: 音乐偏好
+        type: object
+        fields:
+          - name: music_tips
+            label: 提示
+            type: string
+          - name: music_title
+            label: 标题
+            type: string
+          - name: music_bg
+            label: 背景图
+            type: image
+            options:
+              media: images
+          - name: music_link
+            label: 链接
+            type: string
+      - name: extra
+        label: 开发字段
+        type: boolean
+
+  # ---------- 首页技能图标 ----------
+  - name: creativity
+    label: 首页技能
+    type: file
+    path: source/_data/creativity.yml
+    format: yaml
+    list: true
+    fields:
+      - name: class_name
+        label: 分组名
+        type: string
+      - name: creativity_list
+        label: 技能
+        type: object
+        list:
+          collapsible: true
+          summary: "{name}"
+        fields:
+          - name: name
+            label: 名称
+            type: string
+          - name: color
+            label: 背景色
+            type: string
+            description: 十六进制颜色，例如 #3776ab
+          - name: icon
+            label: 图标
+            type: image
+            options:
+              media: images

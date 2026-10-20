@@ -26,6 +26,8 @@ npx hexo generate          # 生成静态文件到 public/
 ├─ themes/anzhiyu/        # 主题源码：改模板/样式在这里
 ├─ scripts/               # 自研 Hexo 脚本，构建时自动加载（按需新建）
 ├─ scaffolds/             # 新建文章/页面的模板
+├─ .pages.yml             # 后台表单配置（Pages CMS）
+├─ .github/workflows/     # 推送后自动构建并发布到 GitHub Pages
 ├─ _config.yml            # 站点配置
 └─ _config.anzhiyu.yml    # 主题配置（优先级高于主题自带 _config.yml）
 ```
@@ -86,6 +88,29 @@ git clone --depth 1 https://github.com/anzhiyu-c/hexo-theme-anzhiyu.git /tmp/anz
 ```
 
 同时比对 `themes/anzhiyu/_config.yml`，把新增项补充到根目录 `_config.anzhiyu.yml`。
+
+## 后台（Pages CMS）
+
+站点是静态的，没有服务器，所以后台用 Git 型 CMS：在网页上改内容 → 自动 commit 到仓库 → GitHub Actions 重新构建 → 网站更新，大约 1–2 分钟。配置在 [.pages.yml](.pages.yml)，目前可编辑：**我的设备、相册、关于页、首页技能**（支持加删条目、改文案、上传图片）。
+
+### 一次性接入（约 10 分钟）
+
+1. 把仓库推到 GitHub（公开或私有都可以）。
+2. 打开 <https://app.pagescms.org>，用 GitHub 登录。
+3. 安装 GitHub App，只授权这一个仓库。
+4. 回到 Pages CMS 选择该仓库，会自动读取 `.pages.yml`。
+5. 仓库 Settings → Pages → Source 选 **GitHub Actions**。
+6. 推一次代码，Actions 自动构建并发布。
+
+### 权限模型
+
+只有对该仓库有写权限的 GitHub 账号能登录编辑；别人在 Pages CMS 里根本看不到这个仓库，访问网站只能看。不需要自己实现登录系统。
+
+### 注意
+
+- 后台传的图片会存到 `source/img/` 并作为 commit 进入仓库，照片多时建议先压缩，或以后换图床。
+- 如果仓库名不是 `<用户名>.github.io`（项目页），要把 `_config.yml` 的 `url` 改成 `https://<用户名>.github.io/<仓库名>`，并加一行 `root: /<仓库名>/`。
+- 文章（`source/_posts`）暂未配置表单，需要时按同样方式加一个 `type: collection` 即可。
 
 ## 部署
 
