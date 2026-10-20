@@ -7,16 +7,14 @@
       description: 写代码、写文章、看视频都靠它们
       equipment_list:
         - name: 笔记本电脑
-          specification: 型号 / 内存 / 硬盘 待补充
-          description: 我的主力生产力工具，一天大部分时间都对着它。把型号、配置和当初为什么选它写在这里。
-          image: /img/equipment/laptop.png
+          specification: 华硕 天选3 R7-6800H RTX3050/ 内存16G / 硬盘 1.5T
+          description: 我的主力生产力工具，一天大部分时间都对着它。电脑是2023年国庆买的，因为大学专业是软件工程所以这个电脑跟着我也算受罪啦哈哈哈！
           link: "#"
         - name: 显示器
           specification: 尺寸 / 分辨率 待补充
           description: 外接一块大屏之后，写代码和查资料都舒服很多，桌面上也不再挤成一团。
           image: /img/equipment/monitor.png
           link: "#"
-
     - title: 桌面外设
       description: 手感比参数更重要
       equipment_list:
@@ -30,7 +28,6 @@
           description: 轻一点、握感顺手的就够了，主要用来切窗口和打游戏。
           image: /img/equipment/mouse.png
           link: "#"
-
     - title: 随身设备
       description: 出门必带
       equipment_list:
