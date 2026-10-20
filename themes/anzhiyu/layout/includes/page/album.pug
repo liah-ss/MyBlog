@@ -12,8 +12,9 @@
           span.banner-button-text 关于本人
   .card-album
     each i in site.data.album
+      - const firstPhoto = i.album_list && i.album_list[0] && i.album_list[0].image && i.album_list[0].image[0]
       .card(onclick=`pjax.loadUrl("${i.path_name}")`)
-        img.card_cover(src=i.cover)
+        img.card_cover(src=url_for(i.cover || firstPhoto || theme.error_img.post_page))
         .card__content
           p.card__category=i.class_name
           h3.card__heading=i.description
