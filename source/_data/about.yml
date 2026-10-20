@@ -19,9 +19,9 @@
   careers:
     tips: 生涯
     title: 持续生长
-    item:
-      - 学生 / 开发者
-    img: /img/placeholder.png
+    list:
+      - desc: 学生 / 开发者
+      - desc: 正在折腾前端与运维
   statistic:
     link: /archives/
     text: 文章归档
@@ -54,9 +54,9 @@
     buff_bottom: 半途而废爱好者
   game:
     game_tips: 爱好游戏
-    game_title: 原神
-    game_uid: "UID: 000000000"
-    game_bg: /img/placeholder.png
+    game_title: 无畏契约
+    game_uid: "Riot ID: LIAH#0000"
+    game_bg: /img/game-valorant.jpg
   comic:
     comic_tips: 爱好番剧
     comic_title: 追番
