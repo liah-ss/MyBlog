@@ -4,19 +4,17 @@ menu:
     分类: /categories/ || anzhiyu-icon-shapes
     标签: /tags/ || anzhiyu-icon-tags
 
-  # 友链:
-  #   友人帐: /link/ || anzhiyu-icon-link
-  #   朋友圈: /fcircle/ || anzhiyu-icon-artstation
-  #   留言板: /comments/ || anzhiyu-icon-envelope
+  友链:
+    友人帐: /link/ || anzhiyu-icon-link
+    留言板: /comments/ || anzhiyu-icon-envelope
 
   我的:
     相册集: /album/ || anzhiyu-icon-images
     我的设备: /equipment/ || anzhiyu-icon-keyboard
-    留言板: /comments/ || anzhiyu-icon-envelope
+    即刻短文: /essay/ || anzhiyu-icon-lightbulb
 
   关于:
     关于本人: /about/ || anzhiyu-icon-paper-plane
-    # 闲言碎语: /essay/ || anzhiyu-icon-lightbulb
     随便逛逛: javascript:toRandomPost() || anzhiyu-icon-shoe-prints1
 
 # nav相关配置
@@ -65,8 +63,8 @@ copy:
 # formal:
 #   name: link || icon
 social:
-  # Github: https://github.com/anzhiyu-c || anzhiyu-icon-github
-  # BiliBili: https://space.bilibili.com/372204786 || anzhiyu-icon-bilibili
+  GitHub: https://github.com/liah-ss || anzhiyu-icon-github
+  RSS: /atom.xml || anzhiyu-icon-rss
 
 # 作者卡片 状态
 author_status:
@@ -108,7 +106,7 @@ docsearch:
 
 # Local search
 local_search:
-  enable: false
+  enable: true
   preload: true
   CDN:
 
@@ -1214,8 +1212,8 @@ accesskey:
 
 # 友情链接顶部相关配置
 linkPageTop:
-  enable: false
-  title: 与数百名博主无限进步
+  enable: true
+  title: 和朋友们一起进步
   # 添加博主友链的评论自定义格式
   addFriendPlaceholder: "昵称（请勿包含博客等字样）：\n网站地址（要求博客地址，请勿提交个人主页）：\n头像图片url（请提供尽可能清晰的图片，我会上传到我自己的图床）：\n描述：\n站点截图（可选）：\n"
 
@@ -1248,7 +1246,7 @@ dynamicEffect:
 inject:
   head:
     # 自定义css
-    # - <link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'">
+    - <link rel="stylesheet" href="/css/custom.css">
 
   bottom:
     # 自定义js

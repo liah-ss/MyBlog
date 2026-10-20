@@ -1,0 +1,18 @@
+- title: 即刻短文
+  subTitle: 想到什么就写两句。
+  tips: 随时随地，分享生活
+  buttonText: 关于我
+  buttonLink: /about/
+  limit: 30
+  home_essay: false
+  top_background: /img/placeholder.png
+  essay_list:
+    - content: 博客终于跑起来了：Hexo + 安知鱼主题，后台用 Pages CMS 改内容，推上去自动构建。
+      date: 2026/10/21
+      from: LIAH
+    - content: 现在的主线是边学边写，把踩过的坑都记下来，省得下次再踩一遍。
+      date: 2026/10/20
+      from: LIAH
+    - content: 无畏契约最近在练一发入魂，战绩还是不说了。
+      date: 2026/10/18
+      from: LIAH

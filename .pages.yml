@@ -447,3 +447,159 @@ content:
             options:
               media: images
               path: skills
+
+  # ---------- 友链 ----------
+  - name: links
+    label: 友链
+    type: file
+    path: source/_data/link.yml
+    format: yaml
+    list: true
+    fields:
+      - name: class_name
+        label: 分组名
+        type: string
+      - name: flink_style
+        label: 卡片样式
+        type: select
+        options:
+          values:
+            - flexcard
+            - anzhiyu
+            - telescopic
+      - name: link_list
+        label: 友链
+        type: object
+        list:
+          collapsible: true
+          summary: "{name}"
+        fields:
+          - name: name
+            label: 站点名
+            type: string
+          - name: link
+            label: 链接
+            type: string
+          - name: avatar
+            label: 头像
+            type: image
+            options:
+              media: images
+          - name: descr
+            label: 描述
+            type: string
+          - name: siteshot
+            label: 截图
+            type: image
+            options:
+              media: images
+
+  # ---------- 即刻短文 ----------
+  - name: essay
+    label: 即刻短文
+    type: file
+    path: source/_data/essay.yml
+    format: yaml
+    list: true
+    fields:
+      - name: title
+        label: 标题
+        type: string
+      - name: subTitle
+        label: 副标题
+        type: string
+      - name: tips
+        label: 提示
+        type: string
+      - name: buttonText
+        label: 按钮文字
+        type: string
+      - name: buttonLink
+        label: 按钮链接
+        type: string
+      - name: limit
+        label: 显示条数
+        type: number
+      - name: home_essay
+        label: 首页展示
+        type: boolean
+      - name: top_background
+        label: 顶部背景
+        type: image
+        options:
+          media: images
+      - name: essay_list
+        label: 短文
+        type: object
+        list:
+          collapsible: true
+          summary: "{content}"
+        fields:
+          - name: content
+            label: 内容
+            type: text
+          - name: date
+            label: 日期
+            type: date
+          - name: from
+            label: 来源
+            type: string
+          - name: link
+            label: 链接
+            type: string
+          - name: image
+            label: 图片
+            type: image
+            options:
+              media: images
+              multiple: true
+
+  # ---------- 文章 ----------
+  - name: posts
+    label: 文章
+    type: collection
+    path: source/_posts
+    format: yaml-frontmatter
+    filename: "{primary}.md"
+    view:
+      primary: title
+      sort: date
+      order: desc
+      fields: [title, date]
+    fields:
+      - name: title
+        label: 标题
+        type: string
+      - name: date
+        label: 日期
+        type: date
+      - name: updated
+        label: 更新日期
+        type: date
+      - name: keywords
+        label: 关键词
+        type: string
+      - name: tags
+        label: 标签
+        type: string
+        list: true
+      - name: categories
+        label: 分类
+        type: string
+        list: true
+      - name: description
+        label: 摘要
+        type: text
+      - name: cover
+        label: 封面
+        type: image
+        options:
+          media: images
+      - name: top_img
+        label: 顶部图
+        type: image
+        options:
+          media: images
+      - name: body
+        label: 正文
+        type: rich-text

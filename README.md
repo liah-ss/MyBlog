@@ -14,6 +14,21 @@ npx hexo generate          # 生成静态文件到 public/
 
 建议把 `npx hexo` 换成全局安装后的 `hexo`：`npm i -g hexo-cli`。
 
+## 已包含的功能
+
+| 功能 | 位置 | 说明 |
+| --- | --- | --- |
+| 站内搜索 | 导航栏放大镜 | `hexo-generator-searchdb` 生成 `search.xml` |
+| RSS | `/atom.xml` | `hexo-generator-feed` |
+| 站点地图 | `/sitemap.xml` | 便于搜索引擎收录 |
+| 文章 | `/archives/` | Markdown + 封面 + 标签分类 |
+| 相册 | `/album/` | 两套布局，照片走 `_data/album.yml` |
+| 我的设备 | `/equipment/` | 分组卡片，图片走后台 |
+| 友链 | `/link/` | `_data/link.yml`，支持三种卡片样式 |
+| 即刻短文 | `/essay/` | 短内容流，`_data/essay.yml` |
+| 留言板 | `/comments/` | 评论区留空，接后端后自动出现 |
+| 自定义样式 | `source/css/custom.css` | 通过 `inject.head` 引入 |
+
 ## 目录约定
 
 ```
@@ -21,6 +36,7 @@ npx hexo generate          # 生成静态文件到 public/
 │  ├─ _posts/             # 文章（每篇可带同名资源目录放图片）
 │  ├─ _data/              # 页面数据（about.yml / album.yml）
 │  ├─ about/ tags/ categories/ comments/ album/ equipment/  # 页面
+│  ├─ link/ essay/        # 友链、即刻短文
 │  ├─ dailyPhoto/ scenery/ # 相册详情页（与 album.yml 的 path_name 对应）
 │  └─ img/                # 站点静态图片（头像、占位图、相册 album/）
 ├─ themes/anzhiyu/        # 主题源码：改模板/样式在这里
@@ -91,7 +107,7 @@ git clone --depth 1 https://github.com/anzhiyu-c/hexo-theme-anzhiyu.git /tmp/anz
 
 ## 后台（Pages CMS）
 
-站点是静态的，没有服务器，所以后台用 Git 型 CMS：在网页上改内容 → 自动 commit 到仓库 → GitHub Actions 重新构建 → 网站更新，大约 1–2 分钟。配置在 [.pages.yml](.pages.yml)，目前可编辑：**我的设备、相册、关于页、首页技能**（支持加删条目、改文案、上传图片）。
+站点是静态的，没有服务器，所以后台用 Git 型 CMS：在网页上改内容 → 自动 commit 到仓库 → GitHub Actions 重新构建 → 网站更新，大约 1–2 分钟。配置在 [.pages.yml](.pages.yml)，目前可编辑：**文章、我的设备、相册、关于页、首页技能、友链、即刻短文**（支持加删条目、改文案、上传图片）。
 
 ### 一次性接入（约 10 分钟）
 

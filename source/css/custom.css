@@ -1,0 +1,6 @@
+/* 站点自定义样式：只放主题配置改不动的微调 */
+
+/* 友链页：链接数量少时隐藏头像墙，避免几个头像被放大成巨图 */
+#flink-banners #skills-tags-group-all {
+  display: none;
+}

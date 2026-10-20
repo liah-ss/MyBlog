@@ -99,6 +99,23 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: anzhiyu
 
+# Search (站内搜索，生成 search.xml)
+search:
+  path: search.xml
+  field: post
+  content: true
+  format: html
+
+# Feed (RSS 订阅)
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+
+# Sitemap (站点地图，利于搜索引擎收录)
+sitemap:
+  path: sitemap.xml
+
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
