@@ -2,8 +2,7 @@
   path_name: /dailyPhoto
   type: 1
   description: 随手拍下的一些日常，光线、桌面、窗外的天。
-  cover: /img/album/p09.jpg
-  top_background: /img/album/p01.jpg
+  top_background: /img/微信图片_20261021001453_108_169.jpg
   top_link: /about/
   top_btn_text: 关于我
   rowHeight: 220
@@ -11,33 +10,31 @@
   lazyload: true
   btnLazyload: false
   album_list:
-    - date: 2026-10-21
-      content: 傍晚的窗
-      address: 家里
+    - date: 2026-04-12
+      content: 南阳理工图书馆门口
+      address: 南阳理工学院
       from: LIAH
       image:
-        - /img/album/p01.jpg
-        - /img/album/p02.jpg
-    - date: 2026-10-21
-      content: 桌面一角
-      address: 书房
+        - /img/5bca9f72a23a081ab86aac72137daffb.jpg
+    - date: 2026-04-19
+      content: 人生收到的第二份花
+      address: 南阳理工学院宿舍
       from: LIAH
       image:
-        - /img/album/p03.jpg
-    - date: 2026-10-21
-      content: 下班路上的颜色
-      address: 路上
+        - /img/58a1b9095c7663101027e1f285a9fd48.jpg
+    - date: 2026-05-05
+      content: 与女朋友一起去万达的路上
+      address: 南阳宛城区仲景大桥
       from: LIAH
       image:
-        - /img/album/p04.jpg
-        - /img/album/p05.jpg
-    - date: 2026-10-21
-      content: 早上的咖啡
-      address: 客厅
+        - /img/b03840623b1d5804e7502d34834d543e.jpg
+    - date: 2026-08-16
+      content: 与朋友在咖啡店聊天互相学习
+      address: 洛阳开元湖了了一杯
       from: LIAH
       image:
-        - /img/album/p06.jpg
-- class_name: 旅行风景
+        - /img/302b43c08ed0a9d446232f0791b6a6b6.jpg
+- class_name: 旅行风景（待更新）
   path_name: /scenery
   type: 1
   description: 去过的地方，记住的天色。
