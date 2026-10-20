@@ -11,6 +11,7 @@ menu:
 
   我的:
     相册集: /album/ || anzhiyu-icon-images
+    我的设备: /equipment/ || anzhiyu-icon-keyboard
     留言板: /comments/ || anzhiyu-icon-envelope
 
   关于:

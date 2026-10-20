@@ -20,7 +20,7 @@ npx hexo generate          # 生成静态文件到 public/
 ├─ source/                # 内容
 │  ├─ _posts/             # 文章（每篇可带同名资源目录放图片）
 │  ├─ _data/              # 页面数据（about.yml / album.yml）
-│  ├─ about/ tags/ categories/ comments/ album/  # 页面
+│  ├─ about/ tags/ categories/ comments/ album/ equipment/  # 页面
 │  ├─ dailyPhoto/ scenery/ # 相册详情页（与 album.yml 的 path_name 对应）
 │  └─ img/                # 站点静态图片（头像、占位图、相册 album/）
 ├─ themes/anzhiyu/        # 主题源码：改模板/样式在这里
@@ -70,7 +70,7 @@ npx hexo generate          # 生成静态文件到 public/
 | 站点信息、导航、配色、开关 | `_config.anzhiyu.yml` |
 | 首页/文章页/关于页结构 | `themes/anzhiyu/layout/*.pug` |
 | 样式 | `themes/anzhiyu/source/css/`（覆盖变量优先，少直接改源码） |
-| 由数据驱动的页面（关于、友链、相册） | `source/_data/*.yml` |
+| 由数据驱动的页面（关于、友链、相册、设备） | `source/_data/*.yml` |
 | 评论后端与开关 | `_config.anzhiyu.yml` 的 `comments` / `twikoo` / `giscus` |
 | 构建期逻辑（生成新页面、处理文章字段） | `scripts/*.js` |
 

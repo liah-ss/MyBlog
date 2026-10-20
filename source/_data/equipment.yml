@@ -1,0 +1,46 @@
+- class_name: 我的设备
+  description: 每天在用的东西
+  tip: 设备不算多，但每一件都用得挺久了。
+  top_background: /img/placeholder.png
+  good_things:
+    - title: 主力设备
+      description: 写代码、写文章、看视频都靠它们
+      equipment_list:
+        - name: 笔记本电脑
+          specification: 型号 / 内存 / 硬盘 待补充
+          description: 我的主力生产力工具，一天大部分时间都对着它。把型号、配置和当初为什么选它写在这里。
+          image: /img/equipment/laptop.png
+          link: "#"
+        - name: 显示器
+          specification: 尺寸 / 分辨率 待补充
+          description: 外接一块大屏之后，写代码和查资料都舒服很多，桌面上也不再挤成一团。
+          image: /img/equipment/monitor.png
+          link: "#"
+
+    - title: 桌面外设
+      description: 手感比参数更重要
+      equipment_list:
+        - name: 键盘
+          specification: 配列 / 轴体 待补充
+          description: 每天敲字最多的一块键盘，换过一次轴之后手感稳定多了。
+          image: /img/equipment/keyboard.png
+          link: "#"
+        - name: 鼠标
+          specification: 型号 待补充
+          description: 轻一点、握感顺手的就够了，主要用来切窗口和打游戏。
+          image: /img/equipment/mouse.png
+          link: "#"
+
+    - title: 随身设备
+      description: 出门必带
+      equipment_list:
+        - name: 手机
+          specification: 型号 / 容量 待补充
+          description: 拍照、记东西、看消息，一天要摸几百次的东西。
+          image: /img/equipment/phone.png
+          link: "#"
+        - name: 耳机
+          specification: 型号 待补充
+          description: 写代码时的背景音来源，降噪一开就能安静下来。
+          image: /img/equipment/headphone.png
+          link: "#"
