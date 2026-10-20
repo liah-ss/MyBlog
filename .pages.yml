@@ -9,6 +9,7 @@ media:
     output: /img
     extensions: [png, jpg, jpeg, webp, gif, svg]
     categories: [image]
+    rename: random
 
 content:
   # ---------- 我的设备 ----------

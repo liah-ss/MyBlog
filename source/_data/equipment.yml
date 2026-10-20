@@ -9,7 +9,7 @@
         - name: 笔记本电脑
           specification: 华硕 天选3 R7-6800H RTX3050/ 内存16G / 硬盘 1.5T
           description: 我的主力生产力工具，一天大部分时间都对着它。电脑是2023年国庆买的，因为大学专业是软件工程所以这个电脑跟着我也算受罪啦哈哈哈！
-          image: /img/my product/0333-c28023ea6762417ca3d9e06ff5c3255f.png
+          image: /img/equipment/laptop-asus.png
           link: "#"
         - name: 显示器
           specification: "23.8英寸 / 2k  180HZ "
@@ -35,7 +35,7 @@
         - name: 手机
           specification: Iphone 17 /256G
           description: 拍照、记东西、看消息，一天要摸几百次的东西。
-          image: /img/my product/iphone-17-finish-select-202509-white_AV1.webp
+          image: /img/equipment/phone-iphone17.webp
           link: "#"
         - name: 耳机
           specification: airpods5（还没买）
