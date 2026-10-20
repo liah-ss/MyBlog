@@ -1,6 +1,6 @@
 - class_name: 关于页
   subtitle: 记录、思考与折腾
-  avatarImg: /img/default_cover.jpg
+  avatarImg: /img/avatar.png
   name: LIAH
   description: 这里是我的数字花园，存放文章、笔记和一些奇怪的想法
   aboutsiteTips:
@@ -21,16 +21,16 @@
     title: 持续生长
     item:
       - 学生 / 开发者
-    img: /img/default_cover.jpg
+    img: /img/placeholder.png
   statistic:
     link: /archives/
     text: 文章归档
-    cover: /img/default_cover.jpg
+    cover: /img/placeholder.png
   map:
     title: 我现在住在
     StrengthenTitle: 中国
-    background: /img/default_cover.jpg
-    backgroundDark: /img/default_cover.jpg
+    background: /img/placeholder.png
+    backgroundDark: /img/placeholder.png
   selfInfo:
     selfInfoTips1: 生于
     selfInfoContentYear: 2000
@@ -41,8 +41,8 @@
   personalities:
     author_name: LIAH
     personality_type: INFP-A
-    photo_url: /img/default_cover.jpg
-    personality_img: /img/default_cover.jpg
+    photo_url: /img/avatar.png
+    personality_img: /img/placeholder.png
     name_url: https://www.16personalities.com/ch
   maxim:
     maxim_tips: 座右铭
@@ -56,22 +56,22 @@
     game_tips: 爱好游戏
     game_title: 原神
     game_uid: "UID: 000000000"
-    game_bg: /img/default_cover.jpg
+    game_bg: /img/placeholder.png
   comic:
     comic_tips: 爱好番剧
     comic_title: 追番
     comic_list:
       - name: 示例番剧
         href: https://www.bilibili.com/
-        cover: /img/default_cover.jpg
+        cover: /img/placeholder.png
   like:
     like_tips: 关注偏好
     like_title: 数码与软件
-    like_bg: /img/default_cover.jpg
+    like_bg: /img/placeholder.png
     like_bottom: 效率工具、键盘、笔记软件
   music:
     music_tips: 音乐偏好
     music_title: 随便听听
-    music_bg: /img/default_cover.jpg
+    music_bg: /img/placeholder.png
     music_link: /music/
   extra: false

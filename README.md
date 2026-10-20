@@ -31,6 +31,14 @@ npx hexo generate          # 生成静态文件到 public/
 
 **约定**：任何自己写的代码放进 `scripts/` 或 `themes/anzhiyu/`，不要散落在根目录；临时脚本、草稿、导出文件用完即删。
 
+## 配置约定
+
+- `_config.yml` 管站点（标题、作者、URL、永久链接），`_config.anzhiyu.yml` 管主题外观与功能，改样式只动后者。
+- 主题配置与主题内置的 `_config.yml` 是**逐项深度合并**的：对象按键合并，数组按索引合并、长度取两者的较大值。所以覆盖 `home_top.category`、`menu` 这类数组时，项数要和主题默认值对齐，否则会残留默认项。
+- `themes/anzhiyu/` 里的 `.git` 已移除，主题代码作为普通文件随仓库提交（方便直接魔改）。
+- 占位图 `source/img/avatar.png`、`source/img/placeholder.png` 是脚本生成的，替换同名文件即可全站生效。
+- 首屏加载动画开关在 `_config.anzhiyu.yml` 的 `preloader.enable`，当前关闭；想还原参考站效果打开即可。
+
 ## 二次开发入口
 
 | 想改什么 | 改哪里 |

@@ -8,8 +8,8 @@ categories:
   - 生活
 keywords: 开始
 description: 第一篇占位文章，顺便记录这套博客是怎么搭起来的。
-top_img: /img/default_cover.jpg
-cover: /img/default_cover.jpg
+top_img: /img/placeholder.png
+cover: /img/placeholder.png
 ---
 
 这是博客的第一篇文章，你可以直接改写它，也可以删掉后重新写。
