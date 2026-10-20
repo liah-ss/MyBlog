@@ -9,35 +9,36 @@
         - name: 笔记本电脑
           specification: 华硕 天选3 R7-6800H RTX3050/ 内存16G / 硬盘 1.5T
           description: 我的主力生产力工具，一天大部分时间都对着它。电脑是2023年国庆买的，因为大学专业是软件工程所以这个电脑跟着我也算受罪啦哈哈哈！
+          image: /img/my product/0333-c28023ea6762417ca3d9e06ff5c3255f.png
           link: "#"
         - name: 显示器
-          specification: 尺寸 / 分辨率 待补充
-          description: 外接一块大屏之后，写代码和查资料都舒服很多，桌面上也不再挤成一团。
+          specification: "23.8英寸 / 2k  180HZ "
+          description: 外接一块大屏之后，写代码和查资料都舒服很多，桌面上也不再挤成一团，最最最主要是打游戏也方便，嘻嘻。
           image: /img/equipment/monitor.png
           link: "#"
     - title: 桌面外设
       description: 手感比参数更重要
       equipment_list:
-        - name: 键盘
-          specification: 配列 / 轴体 待补充
-          description: 每天敲字最多的一块键盘，换过一次轴之后手感稳定多了。
+        - name: "键盘  "
+          specification: "迈从 ACE68 超竞版 / 闪电磁轴＆万磁王轴 "
+          description: 每天敲字最多的一块键盘，换过一次轴之后手感稳定多了，只有wasd三个键加装万磁王轴，不要问为什么，因为急停更快。
           image: /img/equipment/keyboard.png
           link: "#"
         - name: 鼠标
-          specification: 型号 待补充
-          description: 轻一点、握感顺手的就够了，主要用来切窗口和打游戏。
+          specification: 罗技 G304
+          description: 轻一点、握感顺手的就够了，但是鼠标偏小，适合手小的人。
           image: /img/equipment/mouse.png
           link: "#"
     - title: 随身设备
       description: 出门必带
       equipment_list:
         - name: 手机
-          specification: 型号 / 容量 待补充
+          specification: Iphone 17 /256G
           description: 拍照、记东西、看消息，一天要摸几百次的东西。
-          image: /img/equipment/phone.png
+          image: /img/my product/iphone-17-finish-select-202509-white_AV1.webp
           link: "#"
         - name: 耳机
-          specification: 型号 待补充
-          description: 写代码时的背景音来源，降噪一开就能安静下来。
+          specification: airpods5（还没买）
+          description: 等老婆送嘻嘻。
           image: /img/equipment/headphone.png
           link: "#"
