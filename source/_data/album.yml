@@ -1,0 +1,76 @@
+- class_name: 日常随拍
+  path_name: /dailyPhoto
+  type: 2
+  description: 随手拍下的一些日常，光线、桌面、窗外的天。
+  cover: /img/album/p09.jpg
+  top_background: /img/album/p01.jpg
+  top_link: /about/
+  top_btn_text: 关于我
+  rowHeight: 220
+  limit: 10
+  lazyload: true
+  btnLazyload: false
+  url: false
+  album_list:
+    - date: 2026-10-18T20:30:00+08:00
+      content: 傍晚的窗
+      address: 家里
+      from: LIAH
+      image:
+        - /img/album/p01.jpg
+        - /img/album/p02.jpg
+    - date: 2026-10-15T12:10:00+08:00
+      content: 桌面一角
+      address: 书房
+      from: LIAH
+      image:
+        - /img/album/p03.jpg
+    - date: 2026-10-09T18:45:00+08:00
+      content: 下班路上的颜色
+      address: 路上
+      from: LIAH
+      image:
+        - /img/album/p04.jpg
+        - /img/album/p05.jpg
+    - date: 2026-09-28T09:20:00+08:00
+      content: 早上的咖啡
+      address: 客厅
+      from: LIAH
+      image:
+        - /img/album/p06.jpg
+
+- class_name: 旅行风景
+  path_name: /scenery
+  type: 1
+  description: 去过的地方，记住的天色。
+  cover: /img/album/p10.jpg
+  top_background: /img/album/p07.jpg
+  top_link: /about/
+  top_btn_text: 关于我
+  album_list:
+    - date: 2026-10-02T17:40:00+08:00
+      content: 山顶的云被风吹散了一角。
+      address: 湖南
+      from: LIAH
+      image:
+        - /img/album/p07.jpg
+    - date: 2026-08-21T06:15:00+08:00
+      content: 五点起床才配看到的日出。
+      address: 海边
+      from: LIAH
+      image:
+        - /img/album/p08.jpg
+        - /img/album/p09.jpg
+    - date: 2026-07-14T21:00:00+08:00
+      content: 城市的灯一层一层亮起来。
+      address: 市区
+      from: LIAH
+      image:
+        - /img/album/p10.jpg
+    - date: 2026-06-30T15:30:00+08:00
+      content: 雨停之后的街道，反光很好看。
+      address: 老街
+      from: LIAH
+      image:
+        - /img/album/p11.jpg
+        - /img/album/p12.jpg
