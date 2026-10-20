@@ -67,6 +67,7 @@ content:
                 type: image
                 options:
                   media: images
+                  path: equipment
               - name: link
                 label: 链接
                 type: string
@@ -99,11 +100,13 @@ content:
         type: image
         options:
           media: images
+          path: album
       - name: top_background
         label: 详情页顶部背景
         type: image
         options:
           media: images
+          path: album
       - name: top_link
         label: 顶部按钮链接
         type: string
@@ -146,6 +149,7 @@ content:
             type: image
             options:
               media: images
+              path: album
               multiple: true
 
   # ---------- 关于页 ----------
@@ -441,3 +445,4 @@ content:
             type: image
             options:
               media: images
+              path: skills
