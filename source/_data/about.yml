@@ -1,8 +1,9 @@
 - class_name: 关于页
   subtitle: 记录、思考与折腾
-  avatarImg: /img/avatar.png
+  avatarImg: /img/2f0b333a2c1d5715bbd79e7ba50ecba2.jpg
   name: LIAH
-  description: 这里是我的数字花园，存放文章、笔记和一些奇怪的想法
+  description: 这里是我的数字花园，存放一些奇怪的想法
+  helloAbout: Hello  nobody！
   aboutsiteTips:
     tips: 追求
     title1: 源于
@@ -12,7 +13,6 @@
       - 生活
       - 编程
       - 记录
-  helloAbout: Hello there!
   skillsTips:
     tips: 技能
     title: 正在点亮
@@ -21,21 +21,21 @@
     title: 持续生长
     list:
       - desc: 学生 / 开发者
-      - desc: 正在折腾前端与运维
+      - desc: 正在折腾Agent和Java
   statistic:
     link: /archives/
     text: 文章归档
-    cover: /img/placeholder.png
+    cover: /img/8012f9c2c93f32ecc5c003e5cbee3c4c-1.jpg
   map:
     title: 我现在住在
     StrengthenTitle: 中国
-    background: /img/placeholder.png
-    backgroundDark: /img/placeholder.png
+    background: /img/8012f9c2c93f32ecc5c003e5cbee3c4c.jpg
+    backgroundDark: /img/c4199291a416305b9cca14c0a50bf2f8.jpg
   selfInfo:
     selfInfoTips1: 生于
-    selfInfoContentYear: 2000
+    selfInfoContentYear: 2005
     selfInfoTips2: 现在在做
-    selfInfoContent2: 写代码
+    selfInfoContent2: 努力提升自己
     selfInfoTips3: 现在职业
     selfInfoContent3: 学生
   personalities:
@@ -46,8 +46,8 @@
     name_url: https://www.16personalities.com/ch
   maxim:
     maxim_tips: 座右铭
-    maxim_top: 保持好奇，
-    maxim_bottom: 保持记录。
+    maxim_top: 有志者，
+    maxim_bottom: 事竟成。
   buff:
     buff_tips: 特长
     buff_top: 折腾各种工具
@@ -56,22 +56,21 @@
     game_tips: 爱好游戏
     game_title: 无畏契约
     game_uid: "Riot ID: 一颗小兰花#73907"
-    game_bg: /img/game-valorant.jpg
+    game_bg: /img/5fdd67f936f29e9fa4f24267ffc6f496.png
   comic:
-    comic_tips: 爱好番剧
-    comic_title: 追番
+    comic_tips: 爱好电影
+    comic_title: 经典电影
     comic_list:
-      - name: 示例番剧
-        href: https://www.bilibili.com/
-        cover: /img/placeholder.png
+      - name: 肖申克的救赎
+        href: https://movie.douban.com/subject/1292052/
+        cover: /img/R-C.jpg
   like:
     like_tips: 关注偏好
-    like_title: 数码与软件
+    like_title: 数码与软件（待更新）
     like_bg: /img/placeholder.png
-    like_bottom: 效率工具、键盘、笔记软件
+    like_bottom: 效率工具、键盘、耳机
   music:
     music_tips: 音乐偏好
-    music_title: 随便听听
-    music_bg: /img/placeholder.png
-    music_link: /music/
+    music_title: R＆B
+    music_link: https://y.qq.com/n/ryqq_v2/songDetail/002mASQc3pH9Hx
   extra: false
