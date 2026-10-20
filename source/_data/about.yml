@@ -1,0 +1,77 @@
+- class_name: 关于页
+  subtitle: 记录、思考与折腾
+  avatarImg: /img/default_cover.jpg
+  name: LIAH
+  description: 这里是我的数字花园，存放文章、笔记和一些奇怪的想法
+  aboutsiteTips:
+    tips: 追求
+    title1: 源于
+    title2: 热爱而去 感受
+    word:
+      - 学习
+      - 生活
+      - 编程
+      - 记录
+  helloAbout: Hello there!
+  skillsTips:
+    tips: 技能
+    title: 正在点亮
+  careers:
+    tips: 生涯
+    title: 持续生长
+    item:
+      - 学生 / 开发者
+    img: /img/default_cover.jpg
+  statistic:
+    link: /archives/
+    text: 文章归档
+    cover: /img/default_cover.jpg
+  map:
+    title: 我现在住在
+    StrengthenTitle: 中国
+    background: /img/default_cover.jpg
+    backgroundDark: /img/default_cover.jpg
+  selfInfo:
+    selfInfoTips1: 生于
+    selfInfoContentYear: 2000
+    selfInfoTips2: 现在在做
+    selfInfoContent2: 写代码
+    selfInfoTips3: 现在职业
+    selfInfoContent3: 学生
+  personalities:
+    author_name: LIAH
+    personality_type: INFP-A
+    photo_url: /img/default_cover.jpg
+    personality_img: /img/default_cover.jpg
+    name_url: https://www.16personalities.com/ch
+  maxim:
+    maxim_tips: 座右铭
+    maxim_top: 保持好奇，
+    maxim_bottom: 保持记录。
+  buff:
+    buff_tips: 特长
+    buff_top: 折腾各种工具
+    buff_bottom: 半途而废爱好者
+  game:
+    game_tips: 爱好游戏
+    game_title: 原神
+    game_uid: "UID: 000000000"
+    game_bg: /img/default_cover.jpg
+  comic:
+    comic_tips: 爱好番剧
+    comic_title: 追番
+    comic_list:
+      - name: 示例番剧
+        href: https://www.bilibili.com/
+        cover: /img/default_cover.jpg
+  like:
+    like_tips: 关注偏好
+    like_title: 数码与软件
+    like_bg: /img/default_cover.jpg
+    like_bottom: 效率工具、键盘、笔记软件
+  music:
+    music_tips: 音乐偏好
+    music_title: 随便听听
+    music_bg: /img/default_cover.jpg
+    music_link: /music/
+  extra: false
