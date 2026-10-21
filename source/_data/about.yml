@@ -42,7 +42,7 @@
     author_name: LIAH
     personality_type: INFP-A
     photo_url: /img/avatar.png
-    personality_img: /img/placeholder.png
+    personality_img: /img/covers/cover-4.jpg
     name_url: https://www.16personalities.com/ch
   maxim:
     maxim_tips: 座右铭
@@ -67,7 +67,7 @@
   like:
     like_tips: 关注偏好
     like_title: 数码与软件（待更新）
-    like_bg: /img/placeholder.png
+    like_bg: /img/covers/cover-3.jpg
     like_bottom: 效率工具、键盘、耳机
   music:
     music_tips: 音乐偏好
