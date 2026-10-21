@@ -9,7 +9,7 @@
         - name: 笔记本电脑
           specification: 华硕 天选3 R7-6800H RTX3050/ 内存16G / 硬盘 1.5T
           description: 我的主力生产力工具，一天大部分时间都对着它。电脑是2023年国庆买的，因为大学专业是软件工程所以这个电脑跟着我也算受罪啦哈哈哈！
-          image: /img/equipment/laptop-asus.png
+          image: /img/equipment/laptop-asus.jpg
           link: "#"
         - name: 显示器
           specification: "23.8英寸 / 2k  180HZ "

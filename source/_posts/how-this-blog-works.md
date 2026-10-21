@@ -9,8 +9,8 @@ categories:
   - 技术
 keywords: Hexo,安知鱼,GitHub Pages,Pages CMS
 description: 从零到能访问：技术栈、内容怎么改、发布流程，以及踩过的坑。
-top_img: /img/placeholder.png
-cover: /img/placeholder.png
+top_img: /img/covers/cover-2.jpg
+cover: /img/covers/cover-2.jpg
 ---
 
 把建站过程记下来，一是方便以后重装，二是给同样想搭博客的人一个参照。

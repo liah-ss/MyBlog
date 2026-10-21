@@ -41,6 +41,7 @@ npx hexo generate          # 生成静态文件到 public/
 │  └─ img/                # 站点静态图片（头像、占位图、相册 album/）
 ├─ themes/anzhiyu/        # 主题源码：改模板/样式在这里
 ├─ scripts/               # 自研 Hexo 脚本，构建时自动加载（按需新建）
+├─ tools/                 # 本地小工具（图片压缩等），不参与构建
 ├─ scaffolds/             # 新建文章/页面的模板
 ├─ .pages.yml             # 后台表单配置（Pages CMS）
 ├─ .github/workflows/     # 推送后自动构建并发布到 GitHub Pages
@@ -57,6 +58,18 @@ npx hexo generate          # 生成静态文件到 public/
 - `themes/anzhiyu/` 里的 `.git` 已移除，主题代码作为普通文件随仓库提交（方便直接魔改）。
 - 占位图 `source/img/avatar.png`、`source/img/placeholder.png` 是脚本生成的，替换同名文件即可全站生效。
 - 首屏加载动画开关在 `_config.anzhiyu.yml` 的 `preloader.enable`，当前关闭；想还原参考站效果打开即可。
+
+## 图片处理
+
+后台传的图直接进仓库，体积大会拖慢克隆和构建。批量压缩：
+
+```bash
+python tools/compress-images.py source/img --max-edge 1600 --quality 82
+```
+
+- 长边超过 1600 的等比缩小，JPEG 重新编码，压缩后反而变大则保留原图；
+- 照片不要存 PNG（一张 2.5MB 的照片压成 JPG 只要 70KB 左右）；
+- 文章封面在 `source/img/covers/`，没设封面的文章会用主题 `cover.default_cover` 里的图随机挑一张。
 
 ## 评论系统
 

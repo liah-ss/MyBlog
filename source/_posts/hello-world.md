@@ -8,8 +8,8 @@ categories:
   - 生活
 keywords: 开始,博客
 description: 这个博客开张了，先说说它准备用来装什么。
-top_img: /img/placeholder.png
-cover: /img/placeholder.png
+top_img: /img/covers/cover-1.jpg
+cover: /img/covers/cover-1.jpg
 ---
 
 这里是我的个人博客，用来放学习笔记、折腾记录，还有一些生活里的碎片。
