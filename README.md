@@ -5,14 +5,18 @@
 ## 常用命令
 
 ```bash
+npm run dev     # 本地预览 http://localhost:4000/MyBlog/
+npm run build   # 生成静态文件到 public/
+npm run check   # 清缓存后完整构建一遍，推代码前跑一次
+```
+
+也可以直接用 hexo（`npx hexo` 或全局安装后的 `hexo`）：
+
+```bash
 npx hexo new "文章标题"    # 新建文章（同时生成同名资源目录）
 npx hexo new page "页面名" # 新建页面
 npx hexo clean             # 清理缓存与 public
-npx hexo server            # 本地预览 http://localhost:4000
-npx hexo generate          # 生成静态文件到 public/
 ```
-
-建议把 `npx hexo` 换成全局安装后的 `hexo`：`npm i -g hexo-cli`。
 
 ## 已包含的功能
 
